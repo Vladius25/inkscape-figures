@@ -11,7 +11,6 @@ import click
 import inotify.adapters
 from inotify.constants import IN_CLOSE_WRITE
 from .rofi import rofi
-import pyperclip
 from appdirs import user_config_dir
 
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
@@ -169,9 +168,6 @@ def watch_daemon():
             else:
                 log.debug('Command succeeded')
 
-
-            # Copy the LaTeX code to include the file to the clipboard
-            pyperclip.copy(latex_template(name, beautify(name)))
 
 
 

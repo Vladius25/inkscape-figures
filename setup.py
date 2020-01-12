@@ -22,6 +22,6 @@ setup(
     ],
     packages=['inkscapefigures'],
     scripts=['bin/inkscape-figures'],
-    install_requires=['inotify', 'pyperclip', 'click', 'appdirs', 'daemonize'],
+    install_requires=['inotify', 'click', 'appdirs', 'daemonize'],
     include_package_data=True
 )
